@@ -1,0 +1,13 @@
+<h1>방문록</h1>
+<h1>이것은 그냥 실험 페이지</h1>
+<a href="/home/contact">뒤로가기</a>
+<form action="/home/create" method = "POST">
+   <%=hidden_field_tag :authenticity_token, form_authenticity_token %>
+    댓글 : <textarea name="post_content"></textarea><br>
+    <input type="submit" value="제출"> 
+</form>
+
+<% @writes.each do |x| %>
+    댓글 : <%= x.content %><br>
+<% end %>
+

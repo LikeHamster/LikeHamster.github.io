@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    background-color: #ccf2ff;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 250px auto;
+}
+
+.nav {
+    font-family: 'Shadows Into Light', cursive;
+    height: 40px;
+    background-color: #b3b3b3;
+}
+
+a:visited, a:hover, a:link {
+    color : white;
+}
+
+.paragraph1{
+    grid-column: 1 / span 4;
+    grid-row: 2 /span 1;
+    text-align: center;
+    height: 360px;
+    line-height: 360px;
+    
+    
+} 
+
+.p1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    z-index: 5;
+    position: relative;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+
+.paragraph2 {
+    font-family: 'Nanum Pen Script', cursive;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+    margin: auto;
+    }
+
+
+
+
+.paragraph3{ 
+    font-family: 'Nanum Pen Script', cursive;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    text-align: center;
+    margin: auto;
+    
+  }
+
+#YoungHun {
+     width: 250px;
+     height: 250px;
+     border-radius: 150px;
+     position: absolute;
+     z-index: 1;
+     margin-left: auto;
+     margin-right: auto;
+     top: 100px;
+     left: 0;
+     right: 0;
+     bottom: 0px;
+}
